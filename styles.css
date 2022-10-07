@@ -5,6 +5,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  font-family: josefin-sans, sans-serif;
 }
 
 body {
@@ -15,6 +16,11 @@ body {
   color: #000;
   background-color: rgb(0, 0, 0);
   box-sizing: border-box;
+}
+
+h1,h2,h3,p{
+  font-weight: 400;
+  color: #29454e;
 }
 
 .topsection {
@@ -156,6 +162,33 @@ padding: 0px 60px 0px 50px;
   font-family: josefin-sans, sans-serif;
 }
 
+.hero-text p{
+  color: #ffffff;
+}
+
+/* button  */
+#button{
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  margin: 1rem 0 0 0;
+  display: inline-block;
+  text-decoration: none;
+  font-family: josefin-sans, sans-serif;
+  background: #29454e;
+}
+
+#button:hover{
+  background: #ffffff;
+  color: #031215;
+  text-decoration: none;
+  border: #000 2px solid;
+}
+
 /* transparent button */
 #trans {
   background: rgba(255, 255, 255, 0.01);
@@ -176,6 +209,14 @@ padding: 0px 60px 0px 50px;
   font-family: josefin-sans, sans-serif;
 }
 
+#trans:hover {
+  background: #ffffff;
+  color: #031215;
+  text-decoration: none;
+}
+
+/* dark text */
+
 /* midsection */
 .midsection {
   display: flex;
@@ -185,6 +226,84 @@ padding: 0px 60px 0px 50px;
   height: 100vh;
   padding: 0 0 0 0;
   background-color: #000;
+}
+
+/* footer */
+.footer {
+    color: rgb(0, 0, 0)
+}
+.footer .copyright, .footer .design {
+    padding: 20px
+    color: #eee
+}
+@media (max-width: 767px) {
+    .footer .copyright, .footer .design {
+        width: 100%
+    }
+}
+@media (min-width: 768px) {
+    .footer .copyright, .footer .design {
+        width: 100%
+    }
+}
+
+.navbar {
+    background-color: #050e17;
+    height: 50px;
+    font-family: josefin-sans, sans-serif;
+    color: aliceblue;
+}
+.navbar .container {
+    position: relative
+}
+.navbar .brand {
+    width: 100px;
+    height: 50px;
+    text-transform: uppercase;
+    color: #eee;
+    letter-spacing: 1.3px;
+    font-size: 24px;
+    line-height: 50px;
+
+    top: 0;
+    left: 0;
+    cursor: pointer
+}
+.navbar .menu {
+    position: absolute;
+    top: 0;
+    right: 50px
+}
+.navbar .menu ul, .navbar .menu ul:last-of-type {
+    display: inline-block;
+}
+.navbar .menu ul .fa {
+    font-size: 20px;
+}
+.navbar .menu ul li {
+    display: inline-block;
+    margin-left: 10px;
+    cursor: pointer
+}
+@media (max-width: 767px) {
+    .navbar .menu ul:last-of-type {
+        position: absolute;
+        top: 50px;
+        right: 0;
+        display: none
+    }
+    .navbar .menu ul:last-of-type li {
+        display: block;
+        width: 100%;
+        letter-spacing: 1.3px;
+        width: 150px;
+        padding: 10px;
+        background-color: #fafafa;
+        text-align: center
+    }
+    .navbar .menu ul:last-of-type li:nth-of-type(even) {
+        background-color: #eee
+    }
 }
 /* courses */
 
