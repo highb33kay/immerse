@@ -31,11 +31,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 2rem 2rem !important;
   background: rgba(255, 255, 255, 0.01);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
 }
+
 .navMenu {
   position: absolute;
   top: 50%;
@@ -181,16 +182,91 @@ section {
 /* drop down navigation */
 
 /* mobile screen */
-@media screen and (min-width: 375px) and (max-width: 767px) {
-}
+@media screen and (min-width: 260px) and (max-width: 767px) {
+  .navMenu {
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .navMenu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
 
-@media screen and (max-width: 600px) {
   .navhid {
     padding-top: 100px;
     padding-bottom: 100px;
     text-align: center;
-    justify-content: start;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
+  }
+
+  .navhid a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 900;
+    display: inline-block;
+    padding: 0px 50px 0px 50px;
+    width: 80px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    font-family: josefin-sans, sans-serif;
+  }
+
+  .navhid a:hover {
+    color: #3a92fd;
+  }
+
+  /* .hero-text h1 {
+    font-size: 2em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    line-height: 1.2;
+    font-family: josefin-sans, sans-serif;
+  }
+
+  .hero-text p {
+    font-size: 0.7em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    line-height: 1.2;
+    font-family: josefin-sans, sans-serif;
+  }
+
+  .hero-text h2 {
+    font-size: 1em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    line-height: 1.2;
+    font-family: josefin-sans, sans-serif;
+  } */
+
+  .hero-text {
+    font-size: 1em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    line-height: 1.2;
+    font-family: josefin-sans, sans-serif;
+  }
+}
+
+@media (min-width: 992px) {
+  .navhid {
+    padding: 2em 2em;
   }
 }
